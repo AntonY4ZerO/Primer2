@@ -1,7 +1,7 @@
 from sympy import *
 k, T, C, L = symbols('k T C L')
 #1 способ
-C_ost = 100000 #Изменено правильно
+C_ost = 15000 #Изменено правильно
 Am_lst = []
 C_ost_lst = []
 for i in range(8): #Изменено правильно
