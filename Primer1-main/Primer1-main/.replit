@@ -1,12 +1,18 @@
 entrypoint = "main.py"
-modules = ["bash", "python-3.10"]
+modules = ["python-3.11"]
 
 [nix]
-channel = "stable-24_05"
+channel = "stable-25_05"
 packages = ["cairo", "ffmpeg-full", "freetype", "ghostscript", "glibcLocales", "gobject-introspection", "gtk3", "pkg-config", "qhull", "tcl", "tk"]
 
+[unitTest]
+language = "python3"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
+
 [deployment]
-run = ["pyhton3", "main.py"]
+run = ["python3", "main.py"]
 deploymentTarget = "cloudrun"
 
 [agent]
